@@ -27,7 +27,7 @@ jobs:
             hatch env prune
 
       - name: test
-        run: exit 0
+        run: exit 1
 
       - name: Publish test results
         if: always()
