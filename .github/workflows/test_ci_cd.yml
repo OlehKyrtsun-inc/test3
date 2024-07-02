@@ -28,5 +28,5 @@ jobs:
             hatch env prune
 
       - name: test
-        run: exit 0
+        run: exit 1
 
