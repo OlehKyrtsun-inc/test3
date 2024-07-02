@@ -28,3 +28,10 @@ jobs:
 
       - name: test
         run: exit 1
+
+      - name: Publish test results
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: test-results/
